@@ -22,7 +22,7 @@ fn calculate(puzzle: []const u8) !Answers {
     var puzzle_lines = std.mem.splitScalar(u8, puzzle, '\n');
 
     while (puzzle_lines.next()) |line| {
-        std.debug.print("{any}", .{line});
+        std.debug.print("{s}\n", .{line});
     }
 
     return .{ 0, 0 };
